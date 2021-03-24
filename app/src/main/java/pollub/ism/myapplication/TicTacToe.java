@@ -18,9 +18,9 @@ public class TicTacToe {
         this.activity = activity;
         this.button = new Button[9];
 
-        for (int i = 1; i < 9; i++) {
+        for (int i = 1; i <= 9; i++) {
             int id = this.activity.getResources().getIdentifier("button" + i, "id", this.activity.getPackageName());
-            button[i - 1] = (Button) activity.findViewById(id);
+            button[i - 1] = activity.findViewById(id);
         }
 
     }
